@@ -1,0 +1,11 @@
+{
+  "name": "@rahoot/extension",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "lint": "echo \"No lint configured for extension\"",
+    "build": "echo \"Load unpacked extension from packages/extension\"",
+    "start": "echo \"Use chrome://extensions and load unpacked\""
+  }
+}

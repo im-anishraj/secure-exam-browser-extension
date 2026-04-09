@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam Guard</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 12px; min-width: 260px; }
+      .card { border: 1px solid #ddd; border-radius: 10px; padding: 12px; }
+      .status { margin: 6px 0 10px; font-size: 13px; }
+      button { width: 100%; padding: 8px 10px; border: 0; border-radius: 8px; cursor: pointer; }
+      #quit { background: #c0392b; color: #fff; }
+      #refresh { background: #2c3e50; color: #fff; margin-top: 8px; }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h3>Exam Guard</h3>
+      <div class="status" id="status">Loading status...</div>
+      <button id="quit">Emergency Quit</button>
+      <button id="refresh">Refresh Status</button>
+    </div>
+    <script type="module" src="./popup.js"></script>
+  </body>
+</html>

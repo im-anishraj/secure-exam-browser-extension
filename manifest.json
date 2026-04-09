@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Rahoot Exam Guard",
+  "description": "Anti-cheating guard for exam sessions on localhost.",
+  "version": "0.1.0",
+  "action": {
+    "default_title": "Exam Guard",
+    "default_popup": "src/popup/popup.html"
+  },
+  "background": {
+    "service_worker": "src/background/service-worker.js",
+    "type": "module"
+  },
+  "permissions": ["storage", "tabs", "alarms", "scripting", "activeTab"],
+  "host_permissions": ["http://localhost:3000/*", "http://localhost:3001/*"],
+  "content_scripts": [
+    {
+      "matches": ["http://localhost:3000/*"],
+      "js": ["src/content/exam-guard.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
